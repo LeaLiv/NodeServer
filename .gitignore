@@ -1,0 +1,10 @@
+# תיקיית התלויות של Node.js
+node_modules/
+
+# קובץ הגדרות סביבתיות
+.env
+
+# קבצים זמניים ולוגים
+npm-debug.log
+yarn-error.log
+.DS_Store
