@@ -4,6 +4,7 @@ const app = express();
 const eventsRoute = require('./Routes/eventsRoute.js');
 const producerRoute = require('./Routes/producerRoute.js');
 const bodyParser = require('body-parser');
+const cors=require('cors')
 
 const connectDB = async () => {
     try {
@@ -15,6 +16,7 @@ const connectDB = async () => {
 }
 
 connectDB();
+app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
