@@ -17,7 +17,7 @@ const postProducer = async (req, res) => {
             email: req.body.email,
             phone: req.body.phone,
             name: req.body.name,
-            descripition: req.body.descripition
+            description: req.body.description
         })
         await producer.save()
     } catch (err){
@@ -32,7 +32,7 @@ const putProducer = async (req, res) => {
         await Producer.updateOne({email: req.params.email}, {
             phone: req.body.phone,
             name: req.body.name,
-            descripition: req.body.descripition
+            description: req.body.description
         })
     } catch (err){
         res.status(400).send('Producer not updated');

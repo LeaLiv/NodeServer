@@ -8,6 +8,6 @@ const producerSchema=new Schema({
     },
     name:String,
     phone:String,
-    descripition:String,
+    description:String,
 });
 module.exports=mongoose.model('Producer',producerSchema);
